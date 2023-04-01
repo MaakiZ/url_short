@@ -12,38 +12,37 @@ const ShortUrlController = require("../controllers/ShortUrlController");
  * @swagger
  * /index:
  *   get:
- *     summary: Retrieve a list of urls.
- *     description: Retrieve a list of urls original and shortened from mongodb. Can be used to oepn a url on your browser.
+ *     summary: Retorna uma lista de URLs encurtadas e originais.
+ *     description: Retorna uma lista de URLs encurtadas e originais armazenadas no MongoDB. Pode ser usada para abrir uma URL no navegador.
  *     responses:
  *       200:
- *         description: A list of urls.
+ *         description: Uma lista de URLs.
  *         content:
  *           application/json:
  *             schema:
- *               type: object
- *               properties:
- *                 data:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       origUrl:
- *                         type: string
- *                         description: A not shortened url.
- *                         example: https://portalaluno.unyleya.edu.br/
- *                       shortUrl:
- *                         type: string
- *                         description: A not shortened url.
- *                         example: http://localhost:3333/wXsiQPFVd
- *                       urlId:
- *                         type: string
- *                         description: A shortened url id only.
- *                         example: wXsiQPFVd
- *                       date:
- *                         type: datetime
- *                         description: Shortened URL creation date
- *                         example: 01/04/2023 08:10:14
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   origUrl:
+ *                     type: string
+ *                     description: A URL original.
+ *                     example: https://portalaluno.unyleya.edu.br
+ *                   shortUrl:
+ *                     type: string
+ *                     description: A URL encurtada.
+ *                     example: http://localhost:3333/k9CQlUDEE
+ *                   urlId:
+ *                     type: string
+ *                     description: O identificador único da URL encurtada.
+ *                     example: k9CQlUDEE
+ *                   date:
+ *                     type: string
+ *                     format: date-time
+ *                     description: A data de criação da URL encurtada.
+ *                     example: 2023-04-01T09:31:34.000Z
  */
+
 routes.get("/index", UrlController.listUrl);
 
 routes.get("/create", UrlController.createUrl);
