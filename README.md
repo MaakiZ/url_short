@@ -1,5 +1,6 @@
 # urlShortener
 Academic Project
+- Project requested in activity 3 and 4 of the Mobile Development course in the discipline Back-end Development for Mobile Applications (UNYEAD)
 
 # input the url to create a new short url on mongoDB database
 
