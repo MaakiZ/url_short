@@ -9,8 +9,11 @@ Academic Project
 - docker-compose up
 
 # Routes
+## List urls
 - http://localhost:3001/
+## Creat short url
 - http://localhost:3001/create
+## Open a urlshorted by id
 - http://localhost:3001/openUrl
 
 # Fonts
