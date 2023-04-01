@@ -9,6 +9,8 @@ Academic Project
 - docker-compose up
 
 # Routes
+## Documentation
+- http://localhost:3001/docs
 ## List urls
 - http://localhost:3001/
 ## Creat short url
@@ -20,4 +22,5 @@ Academic Project
 - https://blog.logrocket.com/building-a-url-shortener-with-node-js/
 - https://docs.docker.com/get-started/overview/
 - https://docs.mongodb.com/
+- https://dev.to/kabartolo/how-to-document-an-express-api-with-swagger-ui-and-jsdoc-50do
 
